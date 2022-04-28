@@ -84,14 +84,22 @@ push: Donde podemos subir el código
 
 IMPORTANTE: REGISTRAR SSH KEY EN GITHUB
 
-> Para recuperar el repo cuando lo perdemos de LOCAL
+=> Para recuperar el repo cuando lo perdemos de LOCAL
 
-Agregar SSH Agent:
+git clone <link>: Clona el repo en el equipo
+
+Agregar SSH Agent - SIN CLAVE HASTA QUE CIERRE LA TERMINAL
 ** $ eval "$(ssh-agent -s)"
 ** > Agent pid 59566
 Solicitud de clave SSH
 
-git clone <link>: SIN CLAVE HASTA QUE CIERRE LA TERMINAL
 rm -rf <repo>: Para eliminar un repositorio
 
 pull: Descargar cambios que otros han hecho al repo.
+
+=> ¿Cómo crear un PULL REQUEST (PR)?
+
+master: Rama principal
+
+git checkout: Cambiar de rama *PUEDEN PERDERSE CAMBIOS*
+git checkout -b <nombreRama>: Crear y cambiar de rama
