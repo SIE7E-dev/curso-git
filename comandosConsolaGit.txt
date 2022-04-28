@@ -76,7 +76,22 @@ push: Donde podemos subir el código
 
 => Crear clave SSH
 
-Abrir Git Bash
-$ ssh-keygen -t ed25519 -C "your_email@example.com"
+* Abrir Git Bash
+* Pegar comando: $ ssh-keygen -t ed25519 -C "your_email@example.com"
 
-** Enter file in which to save the key (/c/Users/Silve/.ssh/id_ed25519): Crear clave para el repo
+** Enter file in which to save the key (/c/Users/Silve/.ssh/id_ed25519): Crea directorio
+** Solicita que creemos clave y luego verificarla.
+
+IMPORTANTE: REGISTRAR SSH KEY EN GITHUB
+
+> Para recuperar el repo cuando lo perdemos de LOCAL
+
+Agregar SSH Agent:
+** $ eval "$(ssh-agent -s)"
+** > Agent pid 59566
+Solicitud de clave SSH
+
+git clone <link>: SIN CLAVE HASTA QUE CIERRE LA TERMINAL
+rm -rf <repo>: Para eliminar un repositorio
+
+pull: Descargar cambios que otros han hecho al repo.
