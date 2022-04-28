@@ -1,0 +1,82 @@
+** CMD **
+
+cd > Ir a una ruta
+cd C:\Users\USERNAME\pruebas > Ir a una ruta específica
+cd.. > Regresar una carpeta atrás
+cls > Limpiar la consola
+dir > Información de archivos que hay en una carpeta
+type > Imprime la información de un fichero
+
+----------------------------------------------------------------
+
+** Curso Git **
+
+Nota:
+- Flecha arriba: Último comando
+
+1) pwd > Indica la ruta
+
+2) ls > Ver archivos
+
+3) git init > Inicia el repositorio de Git
+
+4) git status > Indica cómo están los ficheros:
+   a) untracked files: No está siendo trackeado
+   b) commited files: Está siendo chequeado por Git para ir evaluando las versiones
+
+5) git add > El fichero entra en "Staging
+
+6) git commit -m > Para confirmar la versión
+
+7) git log > Para ver el registro | Para salir: < Q >
+
+** PARA CONFIGURAR EL CORREO **
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+
+==> ANTES DE HACER UN COMMIT, HAY QUE HACER STAGING <==
+
+> git add "nombreArchivo.ext"
+> git commit -m "Añadido div con contenido del blog"
+
+Nota: Para agregar todos los archivos > git add . <
+
+>> commit c7e1dbf244f421a5c414fe3959de00a314783e89: Hash del fichero
+>> 'detached HEAD': Puntero al último commit
+
+---------------------------------------------------
+
+RESET
+
+
+
+** GitHub**
+
+=> Crear repositorio
+
+Partes:
+* Descripción: Nombre basado en lo que se trata
+* Público o Privado
+* Inicializar el repositorio con:
+  ** README file: Fichero que indica de qué va el proyecto. Se puede especificar cómo se trabaja con ese código y a su vez, qué cómo y por qué se realizó el código de esa manera.
+  ** .gitignore: Sirve para ignorar ficheros que no deseas trackear con Git.
+
+> Comando para subir el repo a GitHub
+git remote add origin <link>
+git branch -M main
+git push -u origin main
+
+* git remote add: Servidor remoto dónde se almacenan los repositorios
+* origin: El origen del repositorio
+* branch: Sirve para cambiar el nombre de la rama
+
+fetch: Donde podemos bajar el código
+push: Donde podemos subir el código
+
+=> Crear clave SSH
+
+Abrir Git Bash
+$ ssh-keygen -t ed25519 -C "your_email@example.com"
+
+** Enter file in which to save the key (/c/Users/Silve/.ssh/id_ed25519): Crear clave para el repo
