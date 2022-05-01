@@ -26,7 +26,8 @@ Nota:
 
 5) git add > El fichero entra en "Staging
 
-6) git commit -m > Para confirmar la versión
+6) git commit -m "" > Para confirmar la versión
+    ** git commit --amend -m "" > Para cambiar el commit (SIN PUSH)
 
 7) git log > Para ver el registro | Para salir: < Q >
 
@@ -56,44 +57,44 @@ RESET
 => Crear repositorio
 
 Partes:
-* Descripción: Nombre basado en lo que se trata
+* Descripción > Nombre basado en lo que se trata
 * Público o Privado
-* Inicializar el repositorio con:
-  ** README file: Fichero que indica de qué va el proyecto. Se puede especificar cómo se trabaja con ese código y a su vez, qué cómo y por qué se realizó el código de esa manera.
-  ** .gitignore: Sirve para ignorar ficheros que no deseas trackear con Git.
+* Inicializar el repositorio con >
+  ** README file > Fichero que indica de qué va el proyecto. Se puede especificar cómo se trabaja con ese código y a su vez, qué cómo y por qué se realizó el código de esa manera.
+  ** .gitignore > Sirve para ignorar ficheros que no deseas trackear con Git.
 
 > Comando para subir el repo a GitHub
 git remote add origin <link>
 git branch -M main
 git push -u origin main
 
-* git remote add: Servidor remoto dónde se almacenan los repositorios
-* origin: El origen del repositorio
-* branch: Sirve para cambiar el nombre de la rama
+* git remote add > Servidor remoto dónde se almacenan los repositorios
+* origin > El origen del repositorio
+* branch > Sirve para cambiar el nombre de la rama
 
-fetch: Donde podemos bajar el código
-push: Donde podemos subir el código
+fetch > Donde podemos bajar el código
+push > Donde podemos subir el código
 
 => Crear clave SSH
 
 * Abrir Git Bash
-* Pegar comando: $ ssh-keygen -t ed25519 -C "your_email@example.com"
+* Pegar comando > $ ssh-keygen -t ed25519 -C "your_email@example.com"
 
-** Enter file in which to save the key (/c/Users/Silve/.ssh/id_ed25519): Crea directorio
+** Enter file in which to save the key (/c/Users/Silve/.ssh/id_ed25519) > Crea directorio
 ** Solicita que creemos clave y luego verificarla.
 
 IMPORTANTE: REGISTRAR SSH KEY EN GITHUB
 
 => Para recuperar el repo cuando lo perdemos de LOCAL
 
-git clone <link>: Clona el repo en el equipo
+git clone <link> > Clona el repo en el equipo
 
 Agregar SSH Agent - SIN CLAVE HASTA QUE CIERRE LA TERMINAL
 ** $ eval "$(ssh-agent -s)"
 ** > Agent pid 59566
 Solicitud de clave SSH
 
-rm -rf <repo>: Para eliminar un repositorio
+rm -rf <repo> > Para eliminar un repositorio
 
 pull: Descargar cambios que otros han hecho al repo.
 
@@ -101,5 +102,5 @@ pull: Descargar cambios que otros han hecho al repo.
 
 master: Rama principal
 
-git checkout: Cambiar de rama *PUEDEN PERDERSE CAMBIOS*
-git checkout -b <nombreRama>: Crear y cambiar de rama
+git checkout > Cambiar de rama *PUEDEN PERDERSE CAMBIOS*
+git checkout -b <nombreRama> > Crear y cambiar de rama
